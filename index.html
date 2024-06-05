@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+  <html>
+  <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- PLEASE NO CHANGES BELOW THIS LINE (UNTIL I SAY SO) -->
+  <script language="javascript" type="text/javascript" src="libraries/p5.min.js"></script>
+  <script language="javascript" type="text/javascript" src="sketch_240604daaaaaa.js"></script>
+  <!-- OK, YOU CAN MAKE CHANGES BELOW THIS LINE AGAIN -->
+
+  <style>
+  body {
+padding:
+  0;
+margin:
+  0;
+}
+</style>
+  </head>
+
+  <body>
+  <!-- Place your Processing code here -->
+  <script type="application/processing">
+  class enemy {
+  //declare variables
+  float x, y;
+  float w, h;
+  float origin;
+  float range = 100;
+  float speed = 10;
+  //create constructor
+  enemy(float x, float y, float w, float h, float origin) {
+    this.x = x;
+    this.y = y;
+    this.w = w;
+    this.h = h;
+    this.origin = origin;
+  }
+  //display
+  void display() {
+    ellipse(x, y, w, h);
+  }
+  //update
+  void update() {
+  }
+}
+</script>
+  </body>
+  </html>
